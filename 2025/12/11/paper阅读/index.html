@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>paper阅读 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="这是一个非常务实的**“战术路线图”**。 对于大一金工学生（INTJ），“读论文”不是为了陶冶情操，而是为了**“逆向工程（Reverse Engineering）”。你需要通过阅读，搞清楚“输入是什么（数据）”，“处理工序是什么（模型）”，以及“输出是什么（图表&#x2F;结论）”**。 我为你精选了 4 篇 从经典到前沿、从简单回归到机器学习的论文。请注意：这些论文在金融实证领域都是“圣经”">
+<meta property="og:type" content="article">
+<meta property="og:title" content="paper阅读">
+<meta property="og:url" content="http://example.com/2025/12/11/paper%E9%98%85%E8%AF%BB/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="这是一个非常务实的**“战术路线图”**。 对于大一金工学生（INTJ），“读论文”不是为了陶冶情操，而是为了**“逆向工程（Reverse Engineering）”。你需要通过阅读，搞清楚“输入是什么（数据）”，“处理工序是什么（模型）”，以及“输出是什么（图表&#x2F;结论）”**。 我为你精选了 4 篇 从经典到前沿、从简单回归到机器学习的论文。请注意：这些论文在金融实证领域都是“圣经”">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2025-12-11T07:10:00.000Z">
+<meta property="article:modified_time" content="2025-12-11T07:10:48.239Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+
+<meta name="generator" content="Hexo 8.1.1"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-paper阅读" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2025/12/11/paper%E9%98%85%E8%AF%BB/" class="article-date">
+  <time class="dt-published" datetime="2025-12-11T07:10:00.000Z" itemprop="datePublished">2025-12-11</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      paper阅读
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>这是一个非常务实的**“战术路线图”**。</p>
+<p>对于大一金工学生（INTJ），“读论文”不是为了陶冶情操，而是为了**“逆向工程（Reverse Engineering）”。你需要通过阅读，搞清楚“输入是什么（数据）”，“处理工序是什么（模型）”，以及“输出是什么（图表&#x2F;结论）”**。</p>
+<p>我为你精选了 4 篇 从经典到前沿、从简单回归到机器学习的论文。<br>请注意：这些论文在金融实证领域都是“圣经”级别的存在。 你要是能把这些复现了，你比 90% 的研究生都强。</p>
+<p>Level 1：入门级 —— 量化的“Hello World”</p>
+<p>论文： Common risk factors in the returns on stocks and bonds<br>作者： Fama &amp; French (1993)<br>领域： 资产定价 (Asset Pricing) &#x2F; 多因子模型</p>
+<p>为什么读它：<br>这是现代量化投资的基石。著名的**“三因子模型 (Three-Factor Model)”**就出自这里。所有的量化基金，无论多么复杂，以此为起点的。</p>
+<p>你需要复现什么（Python 任务）：</p>
+<p>数据： 下载美股或A股的股票数据。</p>
+<p>逻辑： 怎么把股票按“市值（Size）”和“账面市值比（BM）”分组？</p>
+<p>模型： 这是一个最简单的**“多元线性回归 (OLS)”**。</p>
+<p>代码库： statsmodels (做回归), pandas (处理分组)。</p>
+<p>INTJ 爽点： 逻辑极度简单，但解释力极强。你会发现股票涨跌不是随机的，是由这几个因子决定的。</p>
+<p>Level 2：进阶级 —— “中国特色”的数据清洗训练</p>
+<p>论文： Size and Value in China<br>作者： Liu, Stambaugh, and Yuan (2019)<br>领域： 中国A股实证</p>
+<p>为什么读它：<br>这是目前研究中国股市最权威的一篇论文（发在顶级期刊 JFE 上）。它告诉你：为什么美国的模型在中国不好使？因为中国有“壳股（Shell Value）”干扰。</p>
+<p>你需要复现什么（Python 任务）：<br>这篇论文的精华在于**“数据清洗”**。</p>
+<p>清洗： 怎么在代码里剔除 ST 股、剔除刚上市的股、剔除市值最小的那 30%“壳股”？</p>
+<p>构建： 构造一个适合中国的“CH-3 模型”。</p>
+<p>战略价值：<br>如果你去找 尹力博 或 朱小能 这种做中国市场研究的老师，你告诉他：“我复现过 Liu et al. (2019) 的因子剔除过程”，他会直接让你进组。因为这证明你懂A股的数据结构。</p>
+<p>Level 3：挑战级 —— 你的猎物（中财老师）的研究范式</p>
+<p>论文： Managerial Sentiment and Stock Returns (或者是类似的文本挖掘论文)<br>作者： Jiang, Fuwei (姜富伟) et al.<br>领域： 金融科技 (FinTech) &#x2F; 文本分析 (Text Mining)</p>
+<p>为什么读它：<br>这是定向爆破。你要申请姜富伟老师的项目，就得懂他在干嘛。他的特点是**“用非结构化数据（文本&#x2F;图片）来预测股价”**。</p>
+<p>你需要复现什么（Python 任务）：</p>
+<p>爬虫： 怎么把上市公司年报或新闻爬下来？</p>
+<p>NLP（自然语言处理）： 怎么用 Python 的 jieba 库分词？怎么计算一段话的情绪是“积极”还是“消极”？</p>
+<p>回归： 把算出来的“情绪指数”放进回归方程，看能不能预测明天的股价。</p>
+<p>INTJ 爽点： 这是一个**“从文字到数字”**的量化过程，极其有趣。</p>
+<p>Level 4：终极BOSS级 —— 机器学习在金融的圣经</p>
+<p>论文： Empirical Asset Pricing via Machine Learning<br>作者： Gu, Kelly, and Xiu (2020)<br>领域： 机器学习 (Machine Learning) &#x2F; 深度学习</p>
+<p>为什么读它：<br>这是目前量化圈（业界）和学术界公认的“里程碑”。它系统性地比较了 OLS、Lasso、随机森林、神经网络在预测股票收益率上的表现。</p>
+<p>难度： 极高。涉及大量的数学推导和算法调参。</p>
+<p>你需要复现什么（Python 任务）：<br>不要试图从头写。去 GitHub 上找开源代码（这篇论文有开源）。</p>
+<p>调包侠： 学习怎么用 scikit-learn 调用 Random Forest，怎么用 PyTorch 跑简单的神经网络。</p>
+<p>看图： 看看机器学习是不是真的比传统线性回归准？（结论是：是的，但很难解释）。</p>
+<p>战略价值： 放在简历里，申请 HSG&#x2F;UZH 的量化项目，这篇论文是你的核武器。它证明你已经站在了技术的前沿。</p>
+<p>给你的“阅读与复现”指南</p>
+<p>不要通读全文！</p>
+<p>你是 INTJ，你要抓结构。</p>
+<p>只读： Abstract（干了什么）、Data（用了什么数据）、Methodology（模型公式）、Table 1（描述性统计）、Main Results（核心回归表）。</p>
+<p>跳过： Introduction 里的废话、Literature Review（文献综述）、Robustness Check（稳健性检验，以后再说）。</p>
+<p>利用 AI 助攻：</p>
+<p>看不懂公式？截图扔给 ChatGPT：“请用 Python 代码解释这个公式的含义。”</p>
+<p>看不懂表格？截图扔给 ChatGPT：“这个 t-statistic 大于 2 说明了什么？”</p>
+<p>寒假作业：</p>
+<p>先搞定 Level 1 (Fama-French)。这是基础中的基础。</p>
+<p>如果还有时间，尝试 Level 2 的数据清洗部分。</p>
+<p>当你能在自己的电脑上，跑出一个<br>𝑅<br>2<br>R<br>2<br> 虽然很低（金融数据通常都很低）、但系数显著（Significance）的回归结果时。</p>
+<p>恭喜你，你已经半只脚踏入金融工程的大门了。<br>那不再是书本上的知识，那是你亲手算出来的真理。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2025/12/11/paper%E9%98%85%E8%AF%BB/" data-id="cuiddwP0ZYiIsBZs7yXBDljwu" data-title="paper阅读" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2025/12/11/%E5%AE%9E%E8%AF%81%E7%A0%94%E7%A9%B6%E4%B8%8E%E7%A7%91%E7%A0%94%E5%87%86%E5%A4%87/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">实证研究&amp;科研准备</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/12/">December 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/12/">December 2023</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2025/12/11/paper%E9%98%85%E8%AF%BB/">paper阅读</a>
+          </li>
+        
+          <li>
+            <a href="/2025/12/11/%E5%AE%9E%E8%AF%81%E7%A0%94%E7%A9%B6%E4%B8%8E%E7%A7%91%E7%A0%94%E5%87%86%E5%A4%87/">实证研究&amp;科研准备</a>
+          </li>
+        
+          <li>
+            <a href="/2025/12/11/%E5%AD%98%E5%9C%A8%E6%80%A7%E5%8D%B1%E6%9C%BA/">存在性危机</a>
+          </li>
+        
+          <li>
+            <a href="/2025/12/11/%E7%BE%8E%E8%B5%9B%E5%A4%87%E8%B5%9B%E6%8C%87%E5%8D%97/">美赛备赛指南</a>
+          </li>
+        
+          <li>
+            <a href="/2025/12/11/%E5%9B%BD%E8%B5%9B%E5%BB%BA%E6%A8%A1%E5%87%86%E5%A4%87/">国赛建模准备</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2025 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

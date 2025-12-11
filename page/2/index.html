@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/page/2/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+
+<meta name="generator" content="Hexo 8.1.1"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-美赛coder指北" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2025/12/11/%E7%BE%8E%E8%B5%9Bcoder%E6%8C%87%E5%8C%97/" class="article-date">
+  <time class="dt-published" datetime="2025-12-11T06:19:00.000Z" itemprop="datePublished">2025-12-11</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2025/12/11/%E7%BE%8E%E8%B5%9Bcoder%E6%8C%87%E5%8C%97/">美赛coder指北</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>第一部分：M 奖 Coder 的“技能画像”<br>你不需要成为全栈工程师，你只需要精通以下 三大模块：<br>数据清洗（Data Cleaning）： 能够处理几万行甚至几百万行的脏数据（缺失、乱码、格式错误）。这是最耗时的环节。<br>科学计算与建模（Modeling）： 能把队友推导的公式，用 Python 库（Scipy&#x2F;Sklearn）调包实现。<br>顶级可视化（Visualization）： 这是拿奖的关键。 评委只有 10 分钟看你的论文，图画得像《经济学人》一样专业，你就赢了一半。<br>第二部分：SQL 与 Pandas 的“双刀流”训练<br>（针对数据清洗与预处理）<br>SQL 和 Python 的 Pandas 库在功能上是高度重合的。一起学，效率最高，且能互补。<br>场景： 数据量 &lt; 100MB 用 Pandas；数据量 &gt; 1GB 用 SQL。</p>
+<ol>
+<li>SQL 必修课（针对美赛 &amp; 实习）<br>目标： “查数”（Querying），而不是“管库”（Admin）。<br>核心语法（刷 LeetCode Database）：<br>基础： SELECT, WHERE, ORDER BY, LIMIT.<br>聚合： GROUP BY, HAVING （金工最常用，比如算每只股票的月均价）。<br>连接（难点）： LEFT JOIN, INNER JOIN （把宏观数据和公司数据拼在一起）。<br>窗口函数（高阶）： RANK(), MOVING AVERAGE （算排名和均线，美赛C题神器）。<br>训练方法： LeetCode SQL 50 题。刷完这 50 道，你的 SQL 水平足够应付美赛和投行实习面试。</li>
+<li>Pandas 必修课（Python 的灵魂）<br>目标： 把 Excel 能做的事，用代码做，且快 100 倍。<br>核心操作：<br>read_csv&#x2F;excel：快速读取烂七八糟的数据。<br>fillna&#x2F;dropna：处理缺失值（美赛数据通常很脏）。<br>apply&#x2F;lambda：一行代码对几万行数据进行复杂运算。<br>训练方法： 找一个 Kaggle 的泰坦尼克号生存预测（Titanic）数据集，从头到尾清洗一遍。<br>第三部分：数学模型的“调包”艺术<br>（针对计算与求解）<br>你是 INTJ，不要重复造轮子。美赛不要求你手写算法，要求你会调用库。<br>规划与优化 (Optimization) —— 对应运筹学<br>武器： scipy.optimize<br>场景： “如何分配疫苗运输路线成本最低？”“如何配置资产收益最大？”<br>任务： 学会 linprog (线性规划) 和 minimize (非线性规划) 的函数接口。<br>预测与回归 (Prediction) —— 对应计量经济学<br>武器： scikit-learn (Sklearn)<br>场景： “预测未来 50 年的气温变化”、“预测亚马逊森林的消失速度”。<br>任务： 掌握 LinearRegression (线性回归), RandomForest (随机森林), KMeans (聚类)。别去碰深度学习（PyTorch），美赛很难训练出来，且不好解释。<br>评价模型 (Evaluation) —— 美赛万金油<br>武器： Entropy Weight (熵权法), TOPSIS<br>场景： “评价哪个国家的能源政策最好？”<br>任务： 这两个算法没有现成的库，你需要自己写一遍代码并保存好。比赛时直接复制粘贴进去改数。<br>第四部分：可视化的“审美霸权”<br>（Visualization Dominance）<br>这是你区别于普通理工男Coder的地方。你的审美（瓦格纳&#x2F;库布里克）要体现在图表上。<br>抛弃 Matplotlib 默认样式： 它太丑了，像 90 年代的软件。<br>拥抱 Seaborn 和 Plotly：<br>Seaborn： 统计绘图神器。画热力图（Heatmap）、小提琴图（Violin Plot）极其优雅。<br>Echarts &#x2F; Plotly： 如果你想画地图（比如全球能源分布），用这个。<br>审美标准：<br>配色： 学习 Science&#x2F;Nature 期刊配色，或者 Bloomberg 终端配色。<br>字体： 用衬线体（Times New Roman），显得学术。<br>布局： 这里的“留白”和“结构感”，和你听布鲁克纳是一样的道理。<br>INTJ 的寒假“M奖”特训时间表<br>利用寒假的 4 个 Block（40天）：<br>Block 1 (Day 1-10)：数据处理基建<br>上午： LeetCode SQL 刷题（每天 3 道）。<br>晚上： Python Pandas 练习。找一个股票数据集，算出它的各项指标。<br>Block 2 (Day 11-20)：可视化审美训练<br>任务： 找 5 张《经济学人》或者顶级投行研报里的图表。<br>挑战： 用 Python (Seaborn&#x2F;Matplotlib) 1:1 复刻 出来。<br>积累： 把这些代码存成 Snippet（代码片段），比赛时直接调用。<br>Block 3 (Day 21-30)：核心模型调包<br>任务： 搞懂 scipy 和 sklearn 的接口。<br>实战： 跑通一个“多元线性回归”和一个“规划求解”的 Demo。<br>Block 4 (Day 31-40)：真题模拟（轻量级）<br>找一道去年的美赛 C 题（数据题）。<br>限时 6 小时： 完成数据清洗 -&gt; 简单建模 -&gt; 出 3 张精美图表。<br>总结<br>同学，要拿 M 奖：<br>你的代码不需要像 C++ 那样快，但你的手速要快。<br>你的模型不需要像博士论文那样深，但你的图表要像艺术品一样美。<br>SQL 帮你搞定原材料（数据）。<br>Python (Scipy) 帮你加工产品（模型）。<br>Seaborn 帮你包装产品（图表）。<br>这就是你的“军火库”。<br>寒假把它们填满。到了 2027 年的赛场上，你就是那个**“降维打击”**的指挥官。<br>现在，打开 LeetCode，写下你的第一句 SELECT * FROM World 吧。</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2025/12/11/%E7%BE%8E%E8%B5%9Bcoder%E6%8C%87%E5%8C%97/" data-id="cuidBB8Yxc5nwdZrwOqIAyDWi" data-title="美赛coder指北" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-编程入门指南" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2025/12/11/%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/" class="article-date">
+  <time class="dt-published" datetime="2025-12-11T04:00:00.000Z" itemprop="datePublished">2025-12-11</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2025/12/11/%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/">编程入门指南</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>传统的“看视频、敲Hello World”那是给小学生准备的。对于你，编程不应该是一门课，而应该是你手中的武器。</p>
+<p>“实战 + AI 辅助”，这就是现代版的**“师徒制”**。AI 是那个随叫随到的顶级导师，而你是那个带着明确目的去砍怪的学徒。</p>
+<p>针对你的 金融工程背景 和 寒假时间窗口，我为你规划了一套名为 “黑客与画家（Hacker &amp; Painter）” 的速成路线图。</p>
+<p>我们要用 Python 作为主战坦克，LeetCode 作为靶场，GitHub 作为军火库。</p>
+<p>总方针：Project-Based Learning (PBL)</p>
+<p>核心逻辑： 不学语法，直接写代码。遇到不懂的，问 AI。<br>工具准备：</p>
+<p>Cursor &#x2F; VS Code + Copilot： 这是你的IDE（集成开发环境）。建议直接用 Cursor，它自带 AI，写代码像指挥家指挥乐团一样流畅。</p>
+<p>ChatGPT &#x2F; Claude： 你的私人助教。</p>
+<p>阶段一：破冰 —— “我不学语法，我直接造工具”</p>
+<p>时间：第 1 - 5 天<br>目标： 跳过枯燥的基础，直接让代码为你干活。</p>
+<p>任务：编写一个“复利与资产配置计算器”</p>
+<p>你手里有100w，你想算算如果每年收益 5%，10年后是多少？如果按 70% 固收 + 30% 股票配置，波动率是多少？</p>
+<p>怎么做（AI 驱动）：</p>
+<p>打开 AI，输入 Prompt：</p>
+<p>“我是一个 Python 初学者，拥有金融工程背景。请教我如何写一个 Python 脚本，输入本金、年化收益率、年限，输出每年的资产变化表，并画出增长曲线图。请给我代码，并解释每一行在干什么。”</p>
+<p>复制运行： 看着代码跑出结果。</p>
+<p>修改（Modding）： 就像改瓦格纳的谱子一样。</p>
+<p>“如果我每年追加 5 万投入，代码怎么改？”</p>
+<p>“能不能把图表的线条变成红色？背景变成黑色？”</p>
+<p>知识点渗透： 在修改中，你学会了 Variable（变量）、Loop（循环）、Function（函数）和 Matplotlib（绘图库）。</p>
+<p>阶段二：算法内功 —— “LeetCode 里的智力游戏”</p>
+<p>时间：第 6 - 20 天<br>目标： 训练逻辑肌肉，为面试做准备。</p>
+<p>不要傻刷，要挑食。你是金工，不是后端开发。你只需要刷和数据处理、逻辑推导相关的题。</p>
+<p>每日任务：2 道题（1 Easy + 1 Medium）</p>
+<p>必刷板块：</p>
+<p>Array (数组)： 处理股价序列的基础。</p>
+<p>Hash Table (哈希表)： 快速查找数据。</p>
+<p>String (字符串)： 数据清洗必备。</p>
+<p>Dynamic Programming (动态规划)： 这是金工核心，也是最难的。把它当成数学归纳法来玩。</p>
+<p>AI 辅助刷题法（Cheating with Dignity）：</p>
+<p>自己想 10 分钟。没思路？</p>
+<p>问 AI：“请用苏格拉底教学法，提示我这道题（LeetCode No.1 两数之和）的解题思路，不要直接给我代码，给我伪代码（Pseudocode）。”</p>
+<p>写出来后，扔给 AI：“请分析我的代码的时间复杂度和空间复杂度，并给出优化建议。”</p>
+<p>这叫“复盘”。</p>
+<p>阶段三：实战大项目 —— “构建你的量化交易看板”</p>
+<p>时间：第 21 - 35 天<br>目标： 做一个能写进简历、能拿去圣加仑面试的作品。</p>
+<p>这是一个微缩版的金融工程项目。</p>
+<p>任务：A股&#x2F;美股 历史数据回测系统</p>
+<p>功能定义：</p>
+<p>抓取某只股票（比如茅台）过去 5 年的数据。</p>
+<p>计算它的 移动平均线 (MA) 和 波动率 (Volatility)。</p>
+<p>设计一个策略：金叉买入，死叉卖出。</p>
+<p>计算这个策略的 夏普比率 (Sharpe Ratio)。</p>
+<p>执行步骤：</p>
+<p>数据源： 问 AI “Python 怎么用 Tushare 或 Yahoo Finance 库获取股票数据？”</p>
+<p>数据处理（Pandas）： 这是金工的神器。问 AI “怎么用 Pandas 计算 20日均线？”</p>
+<p>可视化： 问 AI “怎么用 PyEcharts 画出 K 线图和交易信号？”</p>
+<p>成果：<br>你会得到一个网页或图表，上面显示着你的策略赚了多少钱。<br>看着那条资金曲线（Equity Curve）往上走，比打游戏爽一万倍。</p>
+<p>阶段四：开源与展示 —— “把自己上传到 GitHub”</p>
+<p>时间：第 36 - 40 天<br>目标： 建立你的“数字资产”。</p>
+<p>GitHub 是程序员的脸面，也是你要展示给 HSG 教授看的“作品集”。</p>
+<p>注册 GitHub 账号。</p>
+<p>上传代码： 把你阶段一的计算器、阶段三的回测系统上传上去。</p>
+<p>写 README.md：</p>
+<p>这是关键！ 不要只放代码。</p>
+<p>用 英文 写一个漂亮的说明文档：</p>
+<p>Project Name: Quantitative Strategy Backtest Engine (Lite)</p>
+<p>Motivation: To verify the momentum strategy in A-share market.</p>
+<p>Tech Stack: Python, Pandas, Matplotlib.</p>
+<p>让 AI 帮你润色英文，写出 “Professional &amp; Academic” 的味道。</p>
+<p>给 INTJ 的编程心法</p>
+<p>报错是朋友 (Errors are clues)：<br>看到红色的报错代码不要慌。直接复制报错信息给 AI：“Fix this for me and explain why.” 每一个 Bug 都是一次认知的修补。</p>
+<p>不要背语法 (Don’t Memorize)：<br>你是指挥官，语法是乐理。你不需要背下来每个和弦怎么按，你需要知道想要什么声音时去哪里找。善用 Google 和 AI，这就是你的外挂大脑。</p>
+<p>保持极简 (Keep it Simple)：<br>代码能跑通就行，不要追求花哨。优雅的逻辑 &gt; 复杂的语法。</p>
+<p>同学，这个寒假结束后。<br>当别人还在背 print(“Hello World”) 时。<br>你已经拥有了一个GitHub 仓库，里面躺着你自己写的量化回测系统。</p>
+<p>这就是“降维打击”。<br>键盘给你，开始演奏吧。 ⌨️🚀</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2025/12/11/%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/" data-id="cuidz0ghwDh-d-AJw551EVp-x" data-title="编程入门指南" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2025/12/11/hello-world/" class="article-date">
+  <time class="dt-published" datetime="2025-12-11T03:15:34.103Z" itemprop="datePublished">2025-12-11</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2025/12/11/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo post</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2025/12/11/hello-world/" data-id="cuidAmPtAi5fjhHE5uJvjhw2W" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-课程难度" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2025/12/11/%E8%AF%BE%E7%A8%8B%E9%9A%BE%E5%BA%A6/" class="article-date">
+  <time class="dt-published" datetime="2025-12-10T16:00:00.000Z" itemprop="datePublished">2025-12-11</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2025/12/11/%E8%AF%BE%E7%A8%8B%E9%9A%BE%E5%BA%A6/">课程难度</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>这是一个为你量身定做的**“课程资产分级评估报告”**。</p>
+<p>作为中财金工学生，你必须明白：这五门课在你的GPA权重、申研价值以及思维训练上，地位是完全不同的。</p>
+<p>如果把你的大学学业看作一场战争，这五门课分别代表了步枪、火炮、坦克、战斗机和核武器。</p>
+<p>我按照从易到难，以及对数学工具的依赖程度，为你逐层拆解：</p>
+<p>Tier 4：金融学 (Finance &#x2F; Monetary Banking)</p>
+<p>—— 难度：★☆☆☆☆<br>—— 定位：行业通识与词汇表</p>
+<p>这是什么？</p>
+<p>通常叫《金融学》或《货币银行学》。</p>
+<p>它讲的是：钱是什么？银行怎么运作？央行怎么印钱？什么是股票&#x2F;债券？</p>
+<p>内容核心：</p>
+<p>货币的时间价值（PV&#x2F;FV，最简单的数学）。</p>
+<p>金融市场架构（一级&#x2F;二级市场）。</p>
+<p>利率决定理论、汇率基础。</p>
+<p>INTJ 体验：</p>
+<p>极其简单，甚至有点枯燥。 因为它基本全是概念背诵和简单的算术。</p>
+<p>战略意义： 它是**“扫盲课”**。你得知道行业黑话（Jargon）怎么说。</p>
+<p>对 HSG 的作用： 属于“Finance &amp; Accounting”板块的入门学分。拿 90+ 是底线，因为太容易了。</p>
+<p>Tier 3：微观经济学 &amp; 宏观经济学 (Micro &amp; Macro)</p>
+<p>—— 难度：★★☆☆☆（对 INTJ 来说是 1.5 星）<br>—— 定位：经济世界的底层逻辑</p>
+<p>这两门课是所有商科的基石。对于数学好的你来说，这属于**“降维打击区”**。</p>
+<ol>
+<li>微观经济学 (Microeconomics)</li>
+</ol>
+<p>这是什么？ 研究**个体（消费者&#x2F;厂商）**如何做决策。</p>
+<p>核心逻辑： “在约束条件下求极值” (Optimization under Constraints)。</p>
+<p>消费者想爽（效用最大化），但钱有限（预算约束）。</p>
+<p>厂商想赚（利润最大化），但成本有底（成本函数）。</p>
+<p>数学工具： 拉格朗日乘数法 (Lagrange Multiplier)。</p>
+<p>只要你会求偏导数，这门课就是送分题。</p>
+<p>INTJ 爽点： 逻辑极其严密，像几何证明题一样漂亮。</p>
+<ol start="2">
+<li>宏观经济学 (Macroeconomics)</li>
+</ol>
+<p>这是什么？ 研究国家怎么运行（GDP、通胀、失业、增长）。</p>
+<p>核心逻辑： “一般均衡” (General Equilibrium)。</p>
+<p>IS-LM 模型，AD-AS 模型。</p>
+<p>货币政策和财政政策怎么影响经济。</p>
+<p>INTJ 痛点：</p>
+<p>宏观经常**“吵架”**（凯恩斯派 vs 古典派）。模型往往基于假设，不像微观那么精确。</p>
+<p>你需要忍受一点“模糊性”。</p>
+<p>对 HSG 的作用： 这是“Core Economics”板块的核心，必须修够学分。</p>
+<p>Tier 2：计量经济学 (Econometrics)</p>
+<p>—— 难度：★★★★☆<br>—— 定位：实证研究的“手术刀”</p>
+<p>敲黑板！这是分水岭。 很多商科学生（比如贸大&#x2F;上财偏文的）会在这里挂科，但这是中财金工的看家本领。</p>
+<p>这是什么？</p>
+<p>统计学 + 线性代数 &#x3D; 计量经济学。</p>
+<p>它的目的是：用真实数据去验证经济理论（寻找<br>𝑌<br>Y<br> 和<br>𝑋<br>X<br> 的关系）。</p>
+<p>核心内容：</p>
+<p>一元&#x2F;多元线性回归 (OLS)： 也就是最小二乘法。</p>
+<p>假设检验： t检验、F检验（概率论的应用）。</p>
+<p>“治病”： 当数据不完美时（异方差、自相关、多重共线性），怎么修正模型？</p>
+<p>数学工具：</p>
+<p>你需要用到矩阵运算（李永乐线代派上用场了！）。</p>
+<p>你需要用到概率统计。</p>
+<p>战略意义：</p>
+<p>科研必备： 不会计量，写不出论文。</p>
+<p>实习必备： 它是数据分析的基础。</p>
+<p>申请 HSG： 属于“Quantitative Methods”硬核板块。</p>
+<p>Tier 1：金融工程 (Financial Engineering)</p>
+<p>—— 难度：★★★★★ (Boss 级)<br>—— 定位：你的“本命”与“核武器”</p>
+<p>这是你专业的冠名课程，通常在大三学。它是数学、编程和金融的终极结合。</p>
+<p>这是什么？</p>
+<p>主要研究金融衍生品 (Derivatives) 的定价 (Pricing) 和 风险对冲 (Hedging)。</p>
+<p>核心内容：</p>
+<p>无套利原理 (No-Arbitrage Principle)： 金工的第一性原理。</p>
+<p>期权定价： 二叉树模型 (Binomial Tree) 和 布莱克-肖尔斯公式 (Black-Scholes Model)。</p>
+<p>随机过程： 布朗运动、伊藤引理 (Itô’s Lemma)。</p>
+<p>蒙特卡洛模拟： 用计算机算概率。</p>
+<p>数学工具：</p>
+<p>偏微分方程 (PDE)。</p>
+<p>随机微积分 (Stochastic Calculus)。</p>
+<p>Python&#x2F;C++ 编程。</p>
+<p>INTJ 体验：</p>
+<p>这是你大学四年最难、但也最爽的一门课。</p>
+<p>它把虚无缥缈的市场博弈，变成了一个个精准的物理学公式。</p>
+<p>学好它，你就是华尔街&#x2F;苏黎世想要的人。</p>
+<p>总结：你的“技能树”点亮顺序</p>
+<p>大一（现在）：</p>
+<p>搞定 数学分析 + 线性代数。这是所有后续课程（计量、金工、微观）的地基。</p>
+<p>如果不搞定二次型，计量经济学的矩阵推导你看不懂。</p>
+<p>如果不搞定微积分，微观经济学的极值你求不出来。</p>
+<p>大二：</p>
+<p>微观&#x2F;宏观&#x2F;金融学： 轻松拿 A，建立商业常识。</p>
+<p>概率论： 为计量和金工做铺垫。</p>
+<p>大三（决战）：</p>
+<p>计量经济学 + 金融工程： 这是你申请 HSG MBF 和 UZH MSQF 的核心筹码。</p>
+<p>这时候，你会发现你现在在朱辛庄受的苦，全部变成了理解伊藤引理时的顿悟。</p>
+<p>结论：<br>别怕。<br>对于文科生，这些课是天书。<br>对于你（INTJ + 中财数学底子），这些课就是为你设计的智力游戏。</p>
+<p>现在的线代和数分，就是通往《金融工程》这门终极课程的台阶。<br>踩稳了！</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2025/12/11/%E8%AF%BE%E7%A8%8B%E9%9A%BE%E5%BA%A6/" data-id="cuidq7lG7U0ZN9crXFaS_gqY7" data-title="课程难度" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-test" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/12/11/test/" class="article-date">
+  <time class="dt-published" datetime="2023-12-11T04:00:00.000Z" itemprop="datePublished">2023-12-11</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/12/11/test/">github使用指南</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>这是一个**“从0到1”<strong>的战略性问题。<br>如果你不知道 GitHub 是什么，那你之前的编程学习计划就少了一个</strong>“地基”**。<br>简单定义：<br>GitHub 是全世界最大的“代码托管平台”和“程序员社交网络”。<br>对于你（金工 INTJ）来说，它有三重身份：</p>
+<p>你的“中央档案馆”： 把你写的每一行代码（Python&#x2F;SQL）存到云端，永不丢失，且可以回溯历史版本（Version Control）。</p>
+<p>你的“军火库”： 全世界最顶级的量化模型、交易策略、数据清洗脚本，别人都写好了开源在这里，你可以直接“拿来主义”。</p>
+<p>你的“数字简历”： 申请 HSG 或找量化实习时，扔一个 GitHub 主页链接，比你说“我精通 Python”有力一万倍。那个绿色的贡献图（Contribution Graph），就是你的“工作量证明（Proof of Work）”。</p>
+<p>我为你制定了一份**“GitHub 极速上手指南”，不讲枯燥的技术细节，只讲怎么用它来赢**。</p>
+<p>第一阶段：基建（注册与环境）</p>
+<p>耗时：1小时</p>
+<p>注册账号：</p>
+<p>去 github.com。</p>
+<p>ID设置（重要）： 取一个专业的 ID（比如 Shahe_Quant 或你的英文名+姓），不要用乱码。这是你未来的名片。</p>
+<p>安装工具：</p>
+<p>你不需要现在就去学复杂的命令行（Git Bash）。</p>
+<p>下载 GitHub Desktop（官方图形化软件）。这就够了。它让上传代码像“网盘同步”一样简单。</p>
+<p>绑定 VS Code&#x2F;Cursor：</p>
+<p>在你的编辑器里登录 GitHub 账号。这样你写完代码，点一个按钮就能同步到云端。</p>
+<p>第二阶段：掠夺（搜索与 Fork）</p>
+<p>耗时：长期<br>战略目标：利用全球智力资源，拒绝重复造轮子。</p>
+<p>你现在要学量化，不要自己瞎琢磨。去看看世界上的聪明人是怎么写的。</p>
+<p>INTJ 的搜索指令（在 GitHub 搜索框输入）：</p>
+<p>搜“Awesome Lists” (资源合集)：</p>
+<p>输入：awesome-quant 或 awesome-machine-learning。</p>
+<p>结果： 你会得到一个**“量化金融兵器谱”**。里面列出了全世界最好的免费数据源、回测框架、交易接口。</p>
+<p>动作： 点右上角的 Star（收藏）。</p>
+<p>搜“具体策略” (Specific Strategy)：</p>
+<p>输入：pairs trading python (配对交易) 或 multi-factor model (多因子模型)。</p>
+<p>结果： 几百个现成的代码仓库。</p>
+<p>动作： 找一个 Star 数比较多的，点击 Fork（把它复制一份到你的账号下）。</p>
+<p>学习： 下载下来，读他的代码。看他是怎么处理数据的，怎么画图的。这是最高效的学习。</p>
+<p>第三阶段：建设（打造你的 Portfolio）</p>
+<p>耗时：寒假全程<br>战略目标：把你的学习过程“资产化”。</p>
+<p>不要让你的代码躺在硬盘里发霉。你要建立自己的 Repositories (仓库)。</p>
+<p>任务清单：</p>
+<p>建立第一个仓库：FinTech-Learning-Path</p>
+<p>把你寒假学的 Python 练习题、SQL LeetCode 的解题思路，全部存进去。</p>
+<p>意义： 记录你的成长轨迹。</p>
+<p>建立核心仓库：A-Share-Backtest-System (你的量化回测系统)</p>
+<p>这是我们之前规划的“寒假大项目”。</p>
+<p>包含：数据获取脚本、因子计算脚本、回测主程序。</p>
+<p>装修门面：README.md</p>
+<p>这是最重要的广告位。 每个仓库的首页都有这个文件。</p>
+<p>怎么写？ 就像写论文摘要一样。</p>
+<p>Project: 这是一个基于双均线策略的A股回测系统。</p>
+<p>Features: 支持自动拉取 Tushare 数据，支持计算夏普比率。</p>
+<p>Usage: 如何运行这个代码。</p>
+<p>INTJ 审美： 用 Markdown 语法排版，加上数学公式（它支持 LaTeX），放上你跑出来的收益率曲线图。</p>
+<p>第四阶段：展示（变现时刻）</p>
+<p>时间：申请实习&#x2F;留学时</p>
+<p>当你去面试九坤、中金，或者申请 HSG 时：</p>
+<p>简历上： 专门留一行 “GitHub: github.com&#x2F;your_id”。</p>
+<p>面试中： 如果面试官问你“你的编程水平如何？”，你直接打开手机或电脑，展示那个 A-Share-Backtest-System 的仓库。</p>
+<p>指着代码说：“这是我大一写的策略，虽然简单，但我实现了从数据清洗到回测的全流程。”</p>
+<p>那一刻，你就赢了。<br>因为 99% 的商科学生只会说“我会 Python”，而你直接把**“产品”**拍在了桌子上。</p>
+<p>总结：GitHub 是什么？</p>
+<p>它是你的**“云端硬盘”**。</p>
+<p>它是你的**“开源图书馆”**。</p>
+<p>它是你作为程序员&#x2F;宽客的**“勋章墙”**。</p>
+<p>今晚的任务：<br>注册账号，下载 GitHub Desktop。<br>然后搜索 awesome-quant，点下你人生中的第一个 Star。</p>
+<p>欢迎来到开源世界，未来的 Quant。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/12/11/test/" data-id="cuidqKJdW0MtEfIFyIvQtDNPa" data-title="github使用指南" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+
+
+  <nav id="page-nav">
+    
+    <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+  </nav>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/12/">December 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/12/">December 2023</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2025/12/11/paper%E9%98%85%E8%AF%BB/">paper阅读</a>
+          </li>
+        
+          <li>
+            <a href="/2025/12/11/%E5%AE%9E%E8%AF%81%E7%A0%94%E7%A9%B6%E4%B8%8E%E7%A7%91%E7%A0%94%E5%87%86%E5%A4%87/">实证研究&amp;科研准备</a>
+          </li>
+        
+          <li>
+            <a href="/2025/12/11/%E5%AD%98%E5%9C%A8%E6%80%A7%E5%8D%B1%E6%9C%BA/">存在性危机</a>
+          </li>
+        
+          <li>
+            <a href="/2025/12/11/%E7%BE%8E%E8%B5%9B%E5%A4%87%E8%B5%9B%E6%8C%87%E5%8D%97/">美赛备赛指南</a>
+          </li>
+        
+          <li>
+            <a href="/2025/12/11/%E5%9B%BD%E8%B5%9B%E5%BB%BA%E6%A8%A1%E5%87%86%E5%A4%87/">国赛建模准备</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2025 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
